@@ -24,8 +24,8 @@ function meuEscopo() {
         resultado.innerHTML += `<p>${nome.value} ${sobrenome.value}: Idade - ${idade.value} | Altura - ${altura.value} cm</p>`
     }
     form.addEventListener('submit', recebeEventoForm); // Adiciona um escutador de evento
-                                                      // submit --> será o gatilho para a função
-                                                      // recebeEventoForm --> é a função que será executada pelo navegador
+                                                       // submit --> será o gatilho para a função
+                                                       // recebeEventoForm --> é a função que será executada pelo navegador
 }
 
 meuEscopo();

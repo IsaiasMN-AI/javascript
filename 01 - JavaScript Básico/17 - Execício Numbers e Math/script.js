@@ -10,4 +10,4 @@ elementDiv.innerHTML += `${number} é inteiro: ${Number.isInteger(number)}<p>`
 elementDiv.innerHTML += `<p>É um resultado inválido (NaN): ${Number.isNaN(number)}<p>`
 elementDiv.innerHTML += `<p>Arredondado para baixo: ${Math.floor(number)}<p>`
 elementDiv.innerHTML += `<p>Arredondado para cima: ${Math.ceil(number)}<p>`
-elementDiv.innerHTML += `<p>Com duas casas decimais: ${Math.floor(number)}<p>`
+elementDiv.innerHTML += `<p>Com duas casas decimais: ${number.toFixed(2)}<p>`
