@@ -1,6 +1,7 @@
 :root {
     --primary-color: rgb(13, 106, 134);
     --primary-color-darker: rgb(10, 83, 105);
+    --primary-color-darkness: rgb(7, 51, 63);
 }
 
 * {
@@ -23,7 +24,7 @@ body {
     margin-top: 20px;
     background: #fff;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 form input, form label, form button {
@@ -50,5 +51,14 @@ form button {
     font-weight: 700;
     height: 35px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+form button:active {
+    background: var(--primary-color-darkness);
 }
