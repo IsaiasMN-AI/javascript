@@ -30,3 +30,23 @@ for (let chave in pessoa) { // var chave retorna o nome da chave
 for (let valor of frutas) { // var valor retorna o valor de cada item
     console.log(valor);
 }
+
+// =========================================================================
+// Estrutura WHILE
+// =========================================================================
+let i = 0
+
+while (i <= 5) {
+    console.log(i);
+    i++
+}
+
+// =========================================================================
+// Estrutura WHILE
+// =========================================================================
+i = 0
+
+do {
+    console.log(i)
+    i++
+} while (i <= 5)
