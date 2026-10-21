@@ -10,8 +10,8 @@ case 1:
     diaDaSemanaTexto = 'Segunda';
     break
 // ...
-default:
-    diaDaSemanaTexto = ''
+default: // Tem o mesmo papel do else
+    diaDaSemanaTexto = '' 
 }
 
 console.log(diaDaSemanaTexto); // Segunda
