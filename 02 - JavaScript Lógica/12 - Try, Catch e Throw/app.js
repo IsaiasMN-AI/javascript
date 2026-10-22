@@ -34,7 +34,7 @@ function soma2(x, y) {
 }
 
 try {
-    console.log(soma('1', 2));
+    console.log(soma1('1', 2));
 } catch(error) {
     console.log(error);
 }
