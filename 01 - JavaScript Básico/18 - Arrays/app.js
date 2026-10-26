@@ -14,10 +14,13 @@ console.log(nomes); // [ 'Marcos', 'Maria', 'João', 'Jonny' ]
 nomes.unshift('Pedro'); // Adiciona ao início da array
 console.log(nomes); // [ 'Pedro', 'Marcos', 'Maria', 'João', 'Jonny' ]
 
+// Agrupa todos os elementos do Array em uma única String separando-os por espaço
+console.log(nomes.join(' ')); // Pedro Marcos Maria João Jonny
+
 nomes.pop(); // Remove o ultimo item
 console.log(nomes); // [ 'Pedro', 'Marcos', 'Maria', 'João' ]
 
-nomes.shift(); // Remove o primeiro item
+nomes.shift(); // Remove o primeiro item e o retorna
 console.log(nomes); // [ 'Marcos', 'Maria', 'João' ]
 
 delete nomes[1]; // Remove item da array sem alterar o index deixando-o vazio
