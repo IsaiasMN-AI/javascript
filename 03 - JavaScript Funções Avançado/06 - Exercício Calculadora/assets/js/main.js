@@ -6,7 +6,7 @@ function Calculadora() {
         const el = e.target;
 
         if (el.classList.contains('btn-num') || el.classList.contains('btn-op')) {
-            btnParaOInput(el.innerText);
+            addNumInput(el.innerText);
         }
         else if (el.classList.contains('btn-clear-all')) {
             clearAll();
@@ -19,7 +19,7 @@ function Calculadora() {
         }
     });
 
-    const btnParaOInput = (valueText) => {
+    const addNumInput = (valueText) => {
         this.input.value += valueText;
     }
 
