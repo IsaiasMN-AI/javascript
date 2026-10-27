@@ -30,4 +30,6 @@ console.log(nomes.length); // Mostra o tamanho da array
 
 console.log(nomes instanceof Array); // Mostra se é uma array retornando true ou false
 
+const novo = [...nomes]; // Aqui fazemos uma cópia da Array para a var "novo"
+
 // As funções de manipulação de String (13 - Manipulação de Strings) tbm se aplicam nas arrays
