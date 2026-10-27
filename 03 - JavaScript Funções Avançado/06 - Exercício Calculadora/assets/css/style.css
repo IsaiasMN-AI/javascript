@@ -1,0 +1,70 @@
+:root {
+    --primary-color: rgb(13, 106, 134);
+    --primary-color-darker: rgb(10, 83, 105);
+    --primary-color-darkness: rgb(7, 51, 63);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+input, form label, table button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input {
+    text-align: right;
+    font-size: 15px;
+    height: 30px;
+    padding: 0 20px
+}
+
+input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+table button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+table button:hover {
+    background: var(--primary-color-darker);
+}
+
+table button:active {
+    background: var(--primary-color-darkness);
+}
