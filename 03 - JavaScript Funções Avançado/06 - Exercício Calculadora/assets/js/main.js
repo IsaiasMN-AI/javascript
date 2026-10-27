@@ -32,7 +32,13 @@ function Calculadora() {
     }
 
     const calcNow = () => {
-        this.input.value = eval(this.input.value);
+        try {
+            this.input.value = eval(this.input.value);
+        } catch(error) {
+            alert('Conta inválida');
+            return;
+        }
+        
     }
 }
 
