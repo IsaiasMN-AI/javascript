@@ -30,7 +30,8 @@ const chaveNomeRemovida = pessoas.map((obj, indice, array) => {
 console.log(chaveNomeRemovida);
 
 const chaveIdAdicionada = pessoas.map((obj, indice, array) => {
-    obj.id = indice + 10000
-    return obj
+    const newObj = {...obj}
+    newObj.id = indice + 10000
+    return newObj
 });
 console.log(chaveIdAdicionada);
