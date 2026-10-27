@@ -14,6 +14,9 @@ function Calculadora() {
         else if (el.classList.contains('btn-clear-one')) {
             clearOneChar();
         }
+        else if (el.classList.contains('btn-retorn')) {
+            calcNow();
+        }
     });
 
     const btnParaOInput = (valueText) => {
@@ -25,9 +28,11 @@ function Calculadora() {
     }
 
     const clearOneChar = () => {
-        let clear = this.input.innerText;
-        clear.slice(0, 6);
-        this.input.value = clear;
+        this.input.value = this.input.value.slice(0, this.input.value.length - 1);
+    }
+
+    const calcNow = () => {
+        this.input.value = eval(this.input.value);
     }
 }
 
