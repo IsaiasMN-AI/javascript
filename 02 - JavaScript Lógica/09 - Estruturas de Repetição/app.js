@@ -32,6 +32,17 @@ for (let valor of frutas) { // var valor retorna o valor de cada item
 }
 
 // =========================================================================
+// Estrutura FOR EACH
+// =========================================================================
+const numeros = [5, 10, 80, 20, 1, 2, 3, 7, 4, 12, 0, 27, 78];
+
+let acumulador = 0;
+numeros.forEach((valor, indice, array) => {
+    acumulador += valor;
+});
+console.log(acumulador); // 249
+
+// =========================================================================
 // Estrutura WHILE
 // =========================================================================
 let i = 0
